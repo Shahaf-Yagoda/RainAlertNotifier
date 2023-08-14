@@ -11,18 +11,18 @@ def main():
     my_num = os.environ.get("MY_NUM")
 
     # Coordinates for location (Hod Hasharon, Israel)
-    # my_lat = 32.149960
-    # my_lon = 34.883881
+    my_lat = 32.149960
+    my_lon = 34.883881
 
     # Test
-    manchester_lat = 53.480759
-    manchester_lon = -2.242631
+    # manchester_lat = 53.480759
+    # manchester_lon = -2.242631
 
     # API endpoint and parameters for OpenWeatherMap
     url_endpoint = "https://api.openweathermap.org/data/2.5/onecall"
     weather_params = {
-        "lat": manchester_lat,
-        "lon": manchester_lon,
+        "lat": my_lat,
+        "lon": my_lon,
         "appid": weather_api_key,
         "exclude": "current,minutely,daily"
     }
